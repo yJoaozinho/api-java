@@ -64,6 +64,7 @@ public class JwtUtils {
 
     public static String getUsernameFromToken(String token){
         return getClaimsFromToken(token).getSubject();
+
     }
 
     public static boolean isTokenValid(String token){
